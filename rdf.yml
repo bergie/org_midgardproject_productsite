@@ -11,6 +11,8 @@ components:
         - {type: github, user: bergie, repository: org_midgardproject_documentation, branch: master}
     org_midgardproject_productsite:
         - {type: github, user: bergie, repository: org_midgardproject_productsite, branch: master}
+    midgardmvc_ui_create:
+        - {type: github, user: bergie, repository: midgardmvc_ui_create, branch: master}
 nodes:
     title: Midgard RDF
     content: <p>Welcome to Midgard RDF</p>
@@ -22,7 +24,7 @@ nodes:
             component: org_midgardproject_news
             configuration:
                 categories:
-                    - mvc
+                    - rdf
         download:
             title: Download
             content: <p>Download our stuff</p>
