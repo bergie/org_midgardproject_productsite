@@ -1,0 +1,41 @@
+services_dispatcher: appserv
+providers_component: midgardmvc
+providers_hierarchy: configuration
+development_mode: true
+components:
+    midgardmvc_core:
+        - {type: github, user: midgardproject, repository: midgardmvc_core, branch: master}
+    org_midgardproject_news:
+        - {type: github, user: bergie, repository: org_midgardproject_news, branch: master}
+    org_midgardproject_documentation:
+        - {type: github, user: bergie, repository: org_midgardproject_documentation, branch: master}
+    org_midgardproject_productsite:
+        - {type: github, user: bergie, repository: org_midgardproject_productsite, branch: master}
+nodes:
+    title: Midgard RDF
+    content: <p>Welcome to Midgard RDF</p>
+    component: midgardmvc_core
+    children:
+        news:
+            title: News
+            content: <p>Latest Midgard RDF news</p>
+            component: org_midgardproject_news
+            configuration:
+                categories:
+                    - mvc
+        download:
+            title: Download
+            content: <p>Download our stuff</p>
+            component: midgardmvc_core
+        documentation:
+            title: Documentation
+            content: <p>Documentation about Midgard RDF</p>
+            component: org_midgardproject_documentation
+            configuration:
+                documentation_components:
+                    midgardmvc_core: Midgard RDF
+                    midgardmvc_helper_forms: Forms system
+        contribute:
+            title: Contribute
+            content: <p>Contribute to Midgard</p>
+            component: midgardmvc_core

@@ -1,0 +1,278 @@
+
+html, body {
+	height: 100%;
+}
+body{
+	background-color: white;
+	margin: 0;
+	font : 11px Verdana, Helvetica, sans-serif;
+	color: black;
+	line-height: 1;
+}
+a:link, a:visited{
+	text-decoration: none;
+	color: black;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1{
+	font-size: 16px;
+	margin: 0;
+}
+h2, h3, h4, h5{
+	font-size: 14px;
+	margin: 0;
+}
+
+p { margin: 0; padding: 0; }
+
+img {
+	border: 0; 
+}
+form{
+	margin: 0px;
+	padding: 0px;
+}
+input{
+	vertical-align: middle;
+}
+hr{
+	color: #D3E5F7;
+	height: 1px;
+	border: 0;
+	margin: 0;
+	border-bottom: 1px solid #D3E5F7;
+}
+/*---------------Layout------------------------------*/
+#main_center{
+	background-color: white;	
+	width: 100%;
+	min-height: 100%;
+	margin-bottom: -106px;
+}
+header{
+	background: black url(../images/bg_top.png) repeat-x;
+	display: block;
+	height: 145px;
+	padding: 0 160px 0 50px;
+	color: white;
+	position: relative;
+	margin-bottom: 35px;
+}
+#center{	
+	padding: 0 0 0 115px;
+	width: 700px;
+	margin: 0 auto;
+}
+aside{
+	display: block;
+	width: 216px;
+	float: right;
+}
+article{
+	display: block;
+	width: 466px;
+	float: left;
+	line-height: 1.2;
+}
+footer{
+	background: url(../images/bg_footer.png) repeat-x;
+	display: block;
+	height: 56px;
+	color: white;
+	/*margin-top: 50px;*/
+	padding-top: 50px;
+	color: white;
+	font-size: 13px;
+	clear: both;
+}
+/*---------------Common------------------------------*/
+.clear{
+	clear: both;
+	overflow: hidden;
+	height: 0px;
+	display: block;
+}
+.f-left{
+	float: left;
+}
+.f-right{
+	float: right;
+}
+/*---------------------------------------------------*/
+.wcenterwrapper{
+	width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+.push{
+	height: 106px;
+	clear: both;
+}
+/*---------------------------------------------------*/
+header a{
+	color: white !important;
+}
+header h1.logo{
+	background: url(../images/logo.png) no-repeat;
+	width: 455px;
+	height: 92px;
+	text-indent: -10000px;
+	position: absolute;
+	left: 42px;
+	top: 46px;
+}
+header h1.logo a{
+	display: block;
+	height: 92px;
+}
+
+header .nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 569px;
+	top: 108px;
+	font-size: 14px;
+	width: 330px;
+}
+header .nav ul li{
+	display: inline;
+	margin-right: 18px;
+}
+/*---------------------------------------------------*/
+article.fullwidth{
+	float: none;
+	width: auto;
+	min-height: 400px;
+}
+article h1{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+article p{
+	margin-bottom: 10px;
+}
+article blockquote{
+	background: #BABDB6;
+	margin: 0 0 10px 0;
+	padding: 15px 20px;
+	font-size: 12px;
+}
+article pre{
+	background: #BABDB6;
+	margin: 0 0 10px 0;
+	padding: 15px 20px;
+	font-size: 12px;
+	overflow: auto;
+	/*width: 426px;*/
+	max-height: 150px;
+}
+article .tabs{
+	margin-bottom: 10px;
+	font-size: 11px;
+}
+article .iconmenu{
+	padding: 20px 0;
+}
+
+article .iconmenu ul.icons{
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+article .iconmenu ul.icons li{
+	margin-right: 24px;
+	float: left;
+}
+article .iconmenu ul.icons li a{
+	background: no-repeat top;
+	width: 82px;
+	height: 82px;
+	display: block;
+	text-decoration: none;
+	text-indent: -10000px;
+}
+article .iconmenu ul.icons li a:hover,
+article .iconmenu ul.icons li a.active{
+	background-position: bottom;
+}
+article .iconmenu ul.icons li a.windows{	background-image: url(../images/menu_windows.png);	}
+article .iconmenu ul.icons li a.ubuntu{	background-image: url(../images/menu_ubuntu.png);	}
+article .iconmenu ul.icons li a.debian{	background-image: url(../images/menu_debian.png);	}
+article .iconmenu ul.icons li a.osx{	background-image: url(../images/menu_osx.png);	}
+article .iconmenu ul.icons li a.suse{	background-image: url(../images/menu_suse.png);	}
+article .iconmenu ul.icons li a.source{	background-image: url(../images/menu_source.png);	}
+
+article .iconmenu .content{
+	display: none;
+}
+/*---------------------------------------------------*/
+.sidebox{
+	background: url(../images/bg_sidebox.png) no-repeat top;
+	padding-top: 20px;
+	line-height: 1.2;
+}
+.sidebox .wrapper{
+	background: url(../images/bg_sidebox.png) no-repeat bottom;
+	padding: 0 20px 20px 20px;	
+}
+/*---------------------------------------------------*/
+.newslist ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+}
+.newslist ul li{
+	margin-bottom: 10px;
+}
+.newslist ul h3{
+	font-size: 13px;
+}
+.newslist ul .date{
+	color: #8c8c8c;
+}
+.newslist .more{
+	color: #529C0C !important;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: underline !important;
+}
+/*---------------------------------------------------*/
+.linklist ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+}
+.linklist ul li{
+	margin-bottom: 5px;
+}
+.linklist ul a{
+	color: #529C0C !important;
+	text-decoration: underline !important;
+	font-weight: bold;
+}
+/*---------------------------------------------------*/
+footer a{
+	color: white !important;
+	margin-right: 19px;
+}
+footer .wrapper{
+	/*background: url(../images/logo_m.png) no-repeat left;*/
+	width: 590px;
+	margin: 0 auto;
+	/*padding: 0 0 0 56px;*/
+	line-height: 1.7;
+}
+footer .wrapper .logo{
+	float: left;
+	margin-right: 10px;
+}
+
