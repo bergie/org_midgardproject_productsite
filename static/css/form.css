@@ -1,0 +1,55 @@
+form, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+form label {
+    font-size: 13px;
+    font-weight: bold;
+    width: 110px;
+    display: block;
+    margin-top: 8px;
+}
+form input:not([type=radio]),
+form textarea {
+    background: #ffffff;
+    border: 1px solid #000000;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    font: italic 13px Georgia, "Times New Roman", Times, serif;
+    outline: none;
+    padding: 5px;
+    width: 200px;
+}
+form textarea {
+    width: 400px;
+    height: 7em;
+}
+form input:not([type=submit]):focus,
+form textarea:focus {
+    background: #eaeaea;
+}
+form input[type=radio] {
+    float: left;
+    margin-right: 5px;
+}
+form input[type=submit] {
+    background: #cccccc;
+    border: none;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    display: block;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: 7px 25px;
+    width: 100px;
+}
+form input[type=submit]:hover {
+    background: #1e2506;
+    cursor: pointer;
+}
