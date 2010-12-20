@@ -17,6 +17,16 @@ class org_midgardproject_productsite_injector
     {
         // We inject the process only to register our own URL handlers
         $request->add_component_to_chain(midgardmvc_core::get_instance()->component->get('org_midgardproject_productsite'), true);
+
+        if (midgardmvc_core::get_instance()->context->get_current_context() == 0)
+        {
+            // Root request
+            if ($request->get_path() == '/')
+            {
+                $route = $request->get_route();
+                $route->template_aliases['content'] = 'omp-show-frontpage';
+            }
+        }
     }
 }
 ?>

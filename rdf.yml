@@ -1,6 +1,6 @@
 services_dispatcher: appserv
 providers_component: midgardmvc
-providers_hierarchy: configuration
+providers_hierarchy: midgard2
 development_mode: true
 components:
     midgardmvc_core:

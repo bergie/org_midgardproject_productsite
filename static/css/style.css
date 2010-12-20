@@ -244,6 +244,16 @@ article .iconmenu .content{
 	font-size: 12px;
 	text-decoration: underline !important;
 }
+
+ol.news {
+    list-style: none;
+    padding-left: 0;
+}
+
+ol.news li {
+    margin-bottom: 1.5em;
+}
+
 /*---------------------------------------------------*/
 .linklist ul{
 	list-style: none;
