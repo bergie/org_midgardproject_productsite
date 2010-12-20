@@ -3,3 +3,16 @@
 
     <div property="mgd:content" tal:content="structure current_component/object/content">Content</div>
 </article>
+<aside>
+    <div class="sidebox linklist">
+        <div class="wrapper" tal:define="latest_news  php:midgardmvc.templating.dynamic_call('org_midgardproject_news', 'index', array())">
+            <ul xmlns:mgd="http://www.midgard-project.org/midgard2/9.03" 
+mgd:type="container" mgd:order="desc" mgd:baseurl="/news/" tal:condition="latest_news/items" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:dcterms="http://purl.org/dc/terms/" class="news">
+                <li tal:repeat="item latest_news/items" typeof="http://rdfs.org/sioc/ns#Post" tal:attributes="about string:urn:uuid:${item/guid}">
+                    <span tal:content="php: item.metadata.created.format('Y-m-d')">1999-05-07</span>
+                    <a tal:content="item/title" tal:attributes="href item/url" property="dcterms:title">Blog post</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
