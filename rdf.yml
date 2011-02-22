@@ -41,3 +41,16 @@ nodes:
             title: Contribute
             content: <p>Contribute to Midgard</p>
             component: midgardmvc_core
+attachmentserver_variants:
+    thumbnail:
+        scale:
+            width: 142
+            height: 142
+    medium:
+        scale:
+            width: 220
+            height: 220
+    view:
+        scale:
+            width: 466
+            height: 380
